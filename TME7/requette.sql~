@@ -1,0 +1,4 @@
+select
+from Sport s, RangIndividuel r, Athlete a, Epreuve e
+where s.sid=e.sid and r.aid=a.aid and r.epid=e.epid
+group by s.sid, s.nomsp

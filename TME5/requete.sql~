@@ -1,0 +1,3 @@
+select s.nomsp e.nomep,e.categorie
+from Sport sp, Epreuve ep, RangIndiduel r
+where ;

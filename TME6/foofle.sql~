@@ -1,0 +1,5 @@
+select eq.nomeq
+from EquipeF eq, 
+where lower(eq.neq)='piepla'
+;
+

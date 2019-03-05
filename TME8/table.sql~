@@ -1,0 +1,11 @@
+create table Employe(
+numSS number(5) primay key,
+nomE varchar2(20),
+prenomE varchar2(20),
+villeE varchar2(20),
+dateNaissance date,
+datecour date default sysdate,
+constraint format_numss check (length(numss)=5),
+constraint villle_emp check(lower(ville) in ('paris', 'lyon','marseille')),
+constraint limite_age check((datecour-datenaissance)/365<=70)
+);
